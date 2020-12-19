@@ -6,7 +6,11 @@
 <body>
     <div class="background"></div>
     <div class="bg-text">
-        <audio src="audio/alchimie.mp3" autoplay loop></audio>
+        <audio id="audio" src="audio/alchimie.mp3" autoplay loop></audio>
+        <script>
+            var audio = document.getElementById("audio");
+            audio.volume = 0.015;
+        </script>
         <input class="input" id="valeur" type="number" min="1" max="20" name="Valeur" required
         placeholder="Total de valeur de vos matériaux">
 
