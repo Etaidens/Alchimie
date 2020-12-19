@@ -6,15 +6,29 @@ body, html {
     box-sizing: border-box;
   }
 
+  input, label {
+    display:block;
+    font-family: 'Roboto', sans-serif;
+}
+
 .input {
+    font-weight: normal;
     padding: 5px;
     height: 30px;
     width: 15%;
     min-width: 250px;
     margin: 20px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px black solid;
 }
 
-.background {
+.input:focus {
+    box-shadow: 0px 0px 5px 2px lightgrey;
+}
+
+
+.background:not(.music) {
     background-image: url(img/Dragon\ quest\ saison\ 2\ \(2\).jpg);
     filter: blur(8px);
     -webkit-filter: blur(8px);
@@ -39,3 +53,15 @@ body, html {
     padding: 20px;
     text-align: center;
   }
+
+  .music {
+      display: block;
+      width: 150px;
+      outline: none;
+      opacity: 0.4;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 5;
+  } 
+  

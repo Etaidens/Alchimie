@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Alchimie!</title>
+    <link rel="stylesheet" href="ok.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio class="music" id="audio" src="audio/alchimie.mp3" autoplay loop controls></audio>
+    <div class="background"></div>
+    <div class="bg-text">
+        <script>
+            var audio = document.getElementById("audio");
+            audio.volume = 0.015;
+        </script>
+        <div style="float:left;margin-right:20px;">
+            <label for="valeur" style="display: inline-block;">Total de valeur de vos matériaux</label>
+            <input class="input" id="valeur" type="number" min="1" max="20" name="Valeur" required>
+        </div>
+        <div style="float:left;margin-right:20px;">
+            <label for="niveau" style="display: inline-block;">Niveau d'alchimie</label>
+            <input class="input" id="niveau" type="number" min="0" max="3" name="Niveau" required>
+        </div>
+        <div style="float:left;margin-right:20px;">
+            <label for="de" style="display: inline-block;">Résultat de votre jet d'alchimie</label>
+            <input class="input" id="de"  type="number" min="1" max="100" name="Dé" required>
+        </div>
+        <div style="float:left;margin-right:20px;">
+            <label for="qualite" style="display: inline-block;">Qualité générale de vos matériaux</label>
+            <input class="input" id="qualite" type="number" min="1" max="5" name="Qualité" required>
+        </div>
+        <div style="float:left;margin-right:20px;">
+            <label for="equipement" style="display: inline-block;">Multiplicateur d'équipement</label>
+            <input class="input" id="equipement" type="number" step="0.5" min="1" max="2" name="Equipement" required>
+        </div>
+        <div style="float:left;margin-right:20px; margin-top: 18px;">
+        <input class="input" id="submit" type="submit" name="Submit" value="Alchimisation!">
+        </div>
+    </div>
+</body>
+</html>
+
