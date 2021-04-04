@@ -4,7 +4,7 @@ function alchimisation(valeur) {
     var de = document.querySelector('#de').value;
     var qualite = document.querySelector('#qualite').value;
     var equipement = document.querySelector('#equipement').value;
-    divise = Math.round(de / 30)
+    var divise = Math.round(de / 30)
 
     return (valeur * 2 + qualite * 2) * ( (niveau + 1)  * divise) * equipement;
 }
